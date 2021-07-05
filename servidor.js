@@ -2,6 +2,7 @@ const express = require("express");
 const { infoLiniasParadas, infoLinias } = require("./api/llamadasApi");
 
 const app = express();
+app.use(express.static("./recursos"));
 app.use(express.json());
 const server = app.listen(4000, () => {
   console.log("El servidor se ha iniciado.");
