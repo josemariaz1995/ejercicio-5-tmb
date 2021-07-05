@@ -46,8 +46,6 @@ const infoLiniasParadas = async () => {
       properties: { CODI_LINIA, NOM_LINIA, DESC_LINIA },
     } = linia;
     if (+CODI_LINIA === +codigoLinia) {
-      console.log(CODI_LINIA, codigoLinia);
-
       return (contador = {
         linea: NOM_LINIA,
         descripcion: DESC_LINIA,
